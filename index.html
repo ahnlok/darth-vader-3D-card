@@ -13,19 +13,26 @@
         <div class="container">
             <div class="card">
                 <div class="vader">
-                    <div class="circle">
+                    <div class="circle"></div>
                         <img src="vader.gif" alt="darth-vader-gif">
-                    </div>
-                    <div class="info">
-                        <h1 class="title">Darth Vader</h1>
-                        <h3 class="description">"I Am Your Father"</h3>
-                        <div class="button">
-                            <button class="active">Join The Dark Side!</button>
-                        </div>
+                </div>
+                <div class="info">
+                    <h1 class="title">Darth Vader</h1>
+                        <p class="description-role">Role: <span class="sith">The Sith Lord</span></p>
+                        <p class="description-power">Power: <span class="power-level">4200</span></p>
+                        <p class="description-saber">Light Saber Color: <span class= light-saber>Red</span></p>
+                        <p class="description-name">Real Name: <span class="real-name">Anakin Skywalker</span></p>  
+
+                    <div class="button">
+                        <button class="active" value="PLAY" onclick="playMusic()">Join The Dark Side!</button>
+                        <audio id="audio">
+                            <source src="vadersong.mp3">
+                        </audio>
                     </div>
                 </div>
             </div>
         </div>
+    
 
         <!-- Audio -->
         <!-- <input type="button" value="PLAY" onclick="play()">

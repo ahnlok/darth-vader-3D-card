@@ -4,6 +4,12 @@
 /* Font Bungee */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Faster+One&display=swap');
 
+/* Poller One */
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+/* Audiowide & Black Ops One */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&display=swap');
+
 /* border-radius: 50% to make image round */
 
 *{
@@ -13,13 +19,15 @@
 }
 
 body {
-    font-family: 'Faster One', sans-serif;
-    color: black;
+    font-family: 'Black Ops One', sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     perspective: 1000px;
+    background-image: url("light.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -34,24 +42,30 @@ body {
     min-height: 70vh;
     width: 30rem;
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
-    background: white;
+    background-image: url("stay.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
     padding: 0rem 5rem;
+    border-style: solid;
+    border-color: maroon;
 }
 
 .vader{
-    min-height: 35vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
 }
 
 .vader img {
-    width: 20rem;
+    width: 25rem;
     border-radius: 50%;
     z-index: 2;
     transition: all 0.75s ease-out;
+    border-style: solid;
+    border-color: red;
 }
 
 img .info {
@@ -61,49 +75,57 @@ img .info {
 .info {
     display: inline-block;
 }
-/* .circle{
-    width: 15rem;
-    height: 15rem;
-    background: linear-gradient(to right, blue, lightblue);
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
 
-} */
 .info h1 {
-    font-size: 3rem;
+    min-height: 6vh;
+    line-height: 2px;
+    font-size: 2.5rem;
+    transition: all 0.75s ease-out;
+    text-align: center;
+    color: red;
+    -webkit-text-stroke: 2px gold;
+}
+
+.info p {
+    font-size: 1rem;
+    line-height: 0px;
+    padding-bottom: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poller One';
+    transition: all 0.75s ease-out;
+}
+
+.sith, .power-level{
+    color: khaki;
+}
+
+.light-saber {
+    color: red;
+}
+
+.real-name {
+    color: cyan;
+}
+
+
+.button {
+    margin-top: 0rem;
     text-align: center;
     transition: all 0.75s ease-out;
 }
 
-.info h3 {
-    font-size: 1.3rem;
-    padding: 2 rem 0rem;
-    color: grey;
-    font-weight: bold;
-    font-family: 'Bungee';
-    transition: all 0.75s ease-out;
-}
-
-button.active {
-    background: #585858;
-    color: white;
-}
-
-.button {
-    margin-top: 5rem;
-    transition: all 0.75s ease-out;
-}
-
-.button button{
+.button button.active{
     width: 80%;
-    padding: 1rem 0rem;
-    background: red;
-    border: none;
+    padding: 1rem 2rem;
+    background: black;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
     color: white;
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
-    font-family: 'Bungee', sans-serif;
-
+    font-family: 'Poller One', sans-serif;
+    text-align: center;
 }
+

@@ -5,7 +5,10 @@ const container = document.querySelector('.container');
 // Items
 const title = document.querySelector('.title');
 const vader = document.querySelector('.vader img');
-const description = document.querySelector('.info h3');
+const description = document.querySelector('.description-role');
+const descriptionPower = document.querySelector('.description-power');
+const descriptionSaber = document.querySelector('.description-saber');
+const descriptionName = document.querySelector('.description-name');
 const button = document.querySelector('.button button');
 
 
@@ -24,6 +27,9 @@ container.addEventListener('mouseenter', e => {
   title.style.transform ='translateZ(120px) rotateZ(-10deg)';
   vader.style.transform ='translateZ(150px) rotateZ(-10deg)';
   description.style.transform ='translateZ(75px) rotateZ(-10deg)';
+  descriptionPower.style.transform ='translateZ(75px) rotateZ(-10deg)';
+  descriptionSaber.style.transform ='translateZ(75px) rotateZ(-10deg)';
+  descriptionName.style.transform ='translateZ(75px) rotateZ(-10deg)';
   button.style.transform ='translateZ(75px) rotateZ(-10deg)';
 });
 
@@ -35,6 +41,19 @@ container.addEventListener('mouseleave', e => {
   title.style.transform = 'translateZ(0px) rotateZ(0deg)';
   vader.style.transform = 'translateZ(0px) rotateZ(0deg)';
   description.style.transform = 'translateZ(0px) rotate(0deg)';
+  descriptionPower.style.transform = 'translateZ(0px) rotate(0deg)';
+  descriptionSaber.style.transform = 'translateZ(0px) rotate(0deg)';
+  descriptionName.style.transform = 'translateZ(0px) rotate(0deg)';
   button.style.transform = 'translateZ(0px) rotate(0deg)';
-  
 });
+
+// Audio on Button Click
+function playMusic() {
+  var audio1 = document.getElementById("audio");
+    if(audio1.paused) {
+      audio1.play()
+    } 
+    else {
+      audio1.pause();
+    }
+}
