@@ -66,6 +66,7 @@ body {
     transition: all 0.75s ease-out;
     border-style: solid;
     border-color: red;
+    filter: brightness(65%);
 }
 
 img .info {
